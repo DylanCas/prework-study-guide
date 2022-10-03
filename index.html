@@ -10,7 +10,8 @@
   <body>
     <header id="top">
       <h1>Prework Study Guide</h1>
-      <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie."/>
+      <h2>✨ Open the Console(Cmnd, opt, I) to See What's Happening ✨</h2>
     </header>
     <main>
       <section class="card" id="html-section">
@@ -32,6 +33,7 @@
             <li>Internal CSS style sheet - Can embed a style sheet nesting a "style" element within the "head" element.</li>
             <li>External CSS style sheet - Most common as it allows all the CSS rules to stay within a separate file. File is linked using a "link" element in the "head" element.</li>
           </ol>
+          <br>
           <ul>
             <li>CSS dictates the colors, visual layout, and organization of the the page.</li>
             <li>A margin indicates how much space we want around the outside of an element.</li>
@@ -43,19 +45,39 @@
    
       <section class="card" id="git-section">
         <h2>Git</h2>
+          <p>Git Flow</p>
+          <ol type="numbers">
+            <li>git add -A - Stages all changes that occured within the working branch.</li>
+            <li>git commit -m "commit message" - Commits new entries/work to the GitHub repo, with a short descriptive message.</li>
+            <li>git pull origin main - Once changes are added and committed locally, makes sure local branch is in sync with our working feature branch.</li>
+            <li>git push origin branch name - Pushes commited changes to the remote repo. Usually ready to perform "Pull Request" and confirm "Merge" after this, within GitHub,</li>
+          </ol>
+          <br>
           <ul>
             <li>git status - Checks what branch we are currently on</li>
             <li>git checkout -b branch-name - Creates a new branch and switches to it</li>
-            <li>git add -A - Used to commit all files in the working branch.</li>
-            <li>git commit -m "commit message" - Commits new entries/work to the GitHub repo, with a short descriptive message.</li>
           </ul>
       </section>
    
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
-          <ul>
-            <li>Enter JavaScript notes here</li>
-          </ul>
+          <p>JavaScript Types:</p>
+            <ul>
+              <li>Primitive values - All types except objects define "immutable values", values which can't be changed.</li>
+              <li>Boolean type - Represents a logical entity that can have two values: true and false.</li>
+              <li>Null type - Has exactly one value: null. Represents the intentional absence of any object value. Treated as 'false' for boolean operations.</li>
+              <li>Undefined type - A variable that has not been assigned a value has the 'undefined'.</li>
+              <li>Numeric types - ECMAScript has two build in numeric types: Number and BigInt - along with the related value NaN.</li>
+              <li>Number type - Double-precision 64-bit binary format IEEE 754 value.</li>
+              <li>BigInt type - A numeric primitive in JavaScript that can represent integers with arbitrary precision. With BigInts, you can safely store and operate on large integers even beyond the safe integer limit for numbers.</li>
+              <li>NaN - "Not a Number", typically encountered when the result of an arithmetic operation cannot be expressed as number. It is also the only value in JavaScript that is not equal to itself.</li>
+              <li>String type - Used to represent textual data. It is a set of "elements" of 16-bit unsigned integer values. Each element in the string occupies a position in the string. The first element is at index 0, next at index 1, and so on. The length of a string is the number of elements in it.</li>
+              <li>Symbol type - A Symbol is a unique and immutable primitive value and may be used as the key of an object property. In some programming languages, symbols are called "atoms".</li>
+              <li>Objects - In Comp Sci, an object is a value in memory which is possibly referencede by an identifier.</li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures">Easy guide to all things JavaScript data types and data structures.</a></li>
+              <br>
+              <li>Order matters when using JavaScript. The script file should load top to bottom, as that is the way it is read. However, certain conditional statements can alter or interrupt this flow somewhat.</li>
+            </ul>
       </section>
     </main>
 
@@ -63,5 +85,6 @@
       <br>
       <p>I can code!</p>
     </footer>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
